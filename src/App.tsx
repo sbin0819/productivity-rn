@@ -5,7 +5,7 @@ import rootReducer from './slices';
 
 // import AuthApp from './components/AuthApp';
 // import TodoApp from './components/TodoApp';
-import PostApp from './components/PostsApp';
+import PostApp from '@components/PostsApp';
 
 const store = configureStore({reducer: rootReducer});
 

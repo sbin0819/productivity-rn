@@ -4,8 +4,8 @@ import {
   PayloadAction,
   SerializedError,
 } from '@reduxjs/toolkit';
-import {getPosts} from '../api/getPosts';
-import {Post} from '../api/types';
+import {getPosts} from '@api/getPosts';
+import {Post} from '@api/types';
 
 export const fetchPosts = createAsyncThunk('posts/fetchUsers', getPosts);
 
