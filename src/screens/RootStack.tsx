@@ -3,6 +3,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import PostAppScreen from './PostAppScreen';
 import TodoAppScreen from './TodoAppScreen';
+import UserScreen from './UserScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -10,13 +11,18 @@ function RootStack() {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="PostApp"
-        component={PostAppScreen}
+        name="User"
+        component={UserScreen}
         options={{headerShown: false}}
       />
       <Stack.Screen
         name="TodoApp"
         component={TodoAppScreen}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="PostApp"
+        component={PostAppScreen}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

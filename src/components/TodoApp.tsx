@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   doneText: {
-    textDecorationColor: 'line-through',
+    textDecorationLine: 'line-through',
   },
   separator: {
     height: 1,
