@@ -1,21 +1,24 @@
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
+
+import {QueryClient, QueryClientProvider} from 'react-query';
 
 import {Provider} from 'react-redux';
-import {configureStore} from '@reduxjs/toolkit';
-import rootReducer from './slices';
+import {store} from './slices/store';
 
 import RootStack from '@screens/RootStack';
+import {NavigationContainer} from '@react-navigation/native';
 
-const store = configureStore({reducer: rootReducer});
+const queryClient = new QueryClient();
 
 function App() {
   return (
-    <Provider store={store}>
-      <NavigationContainer>
-        <RootStack />
-      </NavigationContainer>
-    </Provider>
+    <QueryClientProvider client={queryClient}>
+      <Provider store={store}>
+        <NavigationContainer>
+          <RootStack />
+        </NavigationContainer>
+      </Provider>
+    </QueryClientProvider>
   );
 }
 
