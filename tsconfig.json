@@ -41,6 +41,7 @@
     "baseUrl": "src",
     "paths": {
       "@screens/*": ["screens/*"],
+      "@tabs/*": ["tabs/*"],
       "@components/*": ["components/*"],
       "@api/*": ["api/*"],
       "@hooks/*": ["hooks/*"],
