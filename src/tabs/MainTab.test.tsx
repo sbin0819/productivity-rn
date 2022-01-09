@@ -16,6 +16,6 @@ describe('test', () => {
         <RootStack />
       </NavigationContainer>,
     );
-    await waitFor(() => getByText('Home'));
+    await waitFor(() => getByText(/Timer/i));
   });
 });
