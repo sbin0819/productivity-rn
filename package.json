@@ -7,6 +7,7 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
+    "cy:open": "cypress open",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "prepare": "husky install",
     "cm": "cz"
@@ -45,6 +46,7 @@
     "babel-plugin-module-resolver": "^4.1.0",
     "commitizen": "^4.2.4",
     "commitlint-config-gitmoji": "^2.2.5",
+    "cypress": "^9.2.0",
     "cz-customizable": "^6.3.0",
     "eslint": "^7.14.0",
     "husky": "^7.0.0",

@@ -2,6 +2,12 @@
 #
 .DS_Store
 
+__snapshots__
+__image_snapshots__
+storybook-static
+cypress/videos
+cypress/screenshots
+
 # Xcode
 #
 build/
