@@ -14,6 +14,7 @@ function MainTab() {
   return (
     <View style={styles.block}>
       <Tab.Navigator
+        initialRouteName="Calendar"
         screenOptions={{
           headerShown: false,
           tabBarShowLabel: false,
